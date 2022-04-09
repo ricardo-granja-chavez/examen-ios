@@ -10,6 +10,13 @@
 		1D59A6822801FF7500B0BF5F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6802801FF7500B0BF5F /* MenuViewController.swift */; };
 		1D59A6832801FF7500B0BF5F /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A6812801FF7500B0BF5F /* MenuViewController.xib */; };
 		1D59A68C280202EC00B0BF5F /* MenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A68B280202EC00B0BF5F /* MenuTableView.swift */; };
+		1D59A6902802090000B0BF5F /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A68E2802090000B0BF5F /* TextFieldCell.swift */; };
+		1D59A6912802090000B0BF5F /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A68F2802090000B0BF5F /* TextFieldCell.xib */; };
+		1D59A693280210D500B0BF5F /* MultimediaImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A692280210D500B0BF5F /* MultimediaImagePickerController.swift */; };
+		1D59A6952802174D00B0BF5F /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6942802174D00B0BF5F /* AlertController.swift */; };
+		1D59A69928021CC100B0BF5F /* ZoomImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A69728021CC100B0BF5F /* ZoomImageViewController.swift */; };
+		1D59A69A28021CC100B0BF5F /* ZoomImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A69828021CC100B0BF5F /* ZoomImageViewController.xib */; };
+		1D59A69D28021F5B00B0BF5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A69C28021F5B00B0BF5F /* APIManager.swift */; };
 		1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88820F2801F6C700EA131E /* AppDelegate.swift */; };
 		1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8882182801F6CA00EA131E /* Assets.xcassets */; };
 		1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D88821A2801F6CA00EA131E /* LaunchScreen.storyboard */; };
@@ -20,6 +27,13 @@
 		1D59A6802801FF7500B0BF5F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1D59A6812801FF7500B0BF5F /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		1D59A68B280202EC00B0BF5F /* MenuTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableView.swift; sourceTree = "<group>"; };
+		1D59A68E2802090000B0BF5F /* TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		1D59A68F2802090000B0BF5F /* TextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		1D59A692280210D500B0BF5F /* MultimediaImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimediaImagePickerController.swift; sourceTree = "<group>"; };
+		1D59A6942802174D00B0BF5F /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		1D59A69728021CC100B0BF5F /* ZoomImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageViewController.swift; sourceTree = "<group>"; };
+		1D59A69828021CC100B0BF5F /* ZoomImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZoomImageViewController.xib; sourceTree = "<group>"; };
+		1D59A69C28021F5B00B0BF5F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1D88820C2801F6C700EA131E /* examenios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examenios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D88820F2801F6C700EA131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8882182801F6CA00EA131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +59,8 @@
 		1D59A67F2801FF5900B0BF5F /* View+Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D59A69628021CAC00B0BF5F /* ZoomImage */,
+				1D59A68D280208DB00B0BF5F /* Cells */,
 				1D59A6852802029000B0BF5F /* Components */,
 				1D59A6842802028700B0BF5F /* Menu */,
 			);
@@ -64,8 +80,44 @@
 			isa = PBXGroup;
 			children = (
 				1D59A68B280202EC00B0BF5F /* MenuTableView.swift */,
+				1D59A692280210D500B0BF5F /* MultimediaImagePickerController.swift */,
+				1D59A6942802174D00B0BF5F /* AlertController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1D59A68D280208DB00B0BF5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A68E2802090000B0BF5F /* TextFieldCell.swift */,
+				1D59A68F2802090000B0BF5F /* TextFieldCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1D59A69628021CAC00B0BF5F /* ZoomImage */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A69728021CC100B0BF5F /* ZoomImageViewController.swift */,
+				1D59A69828021CC100B0BF5F /* ZoomImageViewController.xib */,
+			);
+			path = ZoomImage;
+			sourceTree = "<group>";
+		};
+		1D59A69B28021F5000B0BF5F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A69E28021FE300B0BF5F /* Router */,
+				1D59A69C28021F5B00B0BF5F /* APIManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1D59A69E28021FE300B0BF5F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		1D8882032801F6C700EA131E = {
@@ -89,6 +141,7 @@
 		1D88820E2801F6C700EA131E /* examenios */ = {
 			isa = PBXGroup;
 			children = (
+				1D59A69B28021F5000B0BF5F /* Domain */,
 				1D59A67F2801FF5900B0BF5F /* View+Controllers */,
 				1D88820F2801F6C700EA131E /* AppDelegate.swift */,
 				1D8882182801F6CA00EA131E /* Assets.xcassets */,
@@ -175,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */,
+				1D59A69A28021CC100B0BF5F /* ZoomImageViewController.xib in Resources */,
 				1D59A6832801FF7500B0BF5F /* MenuViewController.xib in Resources */,
 				1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */,
+				1D59A6912802090000B0BF5F /* TextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,9 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D59A69D28021F5B00B0BF5F /* APIManager.swift in Sources */,
 				1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */,
+				1D59A693280210D500B0BF5F /* MultimediaImagePickerController.swift in Sources */,
+				1D59A69928021CC100B0BF5F /* ZoomImageViewController.swift in Sources */,
 				1D59A68C280202EC00B0BF5F /* MenuTableView.swift in Sources */,
 				1D59A6822801FF7500B0BF5F /* MenuViewController.swift in Sources */,
+				1D59A6952802174D00B0BF5F /* AlertController.swift in Sources */,
+				1D59A6902802090000B0BF5F /* TextFieldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +418,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = examenios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Examen iOS";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Requiere acceso a la cámara.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -387,6 +448,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = examenios/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Examen iOS";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Requiere acceso a la cámara.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
