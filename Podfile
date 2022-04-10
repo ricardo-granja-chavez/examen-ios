@@ -5,6 +5,7 @@ target 'examenios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for examenios
-
+  pod 'SVProgressHUD'
+  pod 'Charts'
+  
 end

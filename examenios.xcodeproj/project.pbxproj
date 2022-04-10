@@ -17,9 +17,24 @@
 		1D59A69928021CC100B0BF5F /* ZoomImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A69728021CC100B0BF5F /* ZoomImageViewController.swift */; };
 		1D59A69A28021CC100B0BF5F /* ZoomImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A69828021CC100B0BF5F /* ZoomImageViewController.xib */; };
 		1D59A69D28021F5B00B0BF5F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A69C28021F5B00B0BF5F /* APIManager.swift */; };
+		1D59A6A02802212400B0BF5F /* QuestionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A69F2802212400B0BF5F /* QuestionRouter.swift */; };
+		1D59A6A32802213900B0BF5F /* QuestionContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6A22802213900B0BF5F /* QuestionContentModel.swift */; };
+		1D59A6A62802214C00B0BF5F /* QuestionContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6A52802214C00B0BF5F /* QuestionContentViewModel.swift */; };
+		1D59A6A928023F1200B0BF5F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6A828023F1200B0BF5F /* UIColor+Extensions.swift */; };
+		1D59A6AC2802414300B0BF5F /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6AB2802414300B0BF5F /* QuestionService.swift */; };
+		1D59A6B028024D0D00B0BF5F /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6AE28024D0D00B0BF5F /* GraphicsViewController.swift */; };
+		1D59A6B128024D0D00B0BF5F /* GraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A6AF28024D0D00B0BF5F /* GraphicsViewController.xib */; };
 		1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88820F2801F6C700EA131E /* AppDelegate.swift */; };
 		1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8882182801F6CA00EA131E /* Assets.xcassets */; };
 		1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D88821A2801F6CA00EA131E /* LaunchScreen.storyboard */; };
+		1DE1099F2802B5BB00EE9525 /* ChartDataGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */; };
+		1DE109A02802B5BB00EE9525 /* ChartDataGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */; };
+		1DFAC5772802587B0062E52E /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC5752802587B0062E52E /* QuestionCell.swift */; };
+		1DFAC5782802587B0062E52E /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFAC5762802587B0062E52E /* QuestionCell.xib */; };
+		1DFAC58028025AF50062E52E /* QuestionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */; };
+		1DFAC5862802B26A0062E52E /* ChartDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC5852802B26A0062E52E /* ChartDataCollectionView.swift */; };
+		1DFAC58A2802B3A20062E52E /* ChartDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC5882802B3A20062E52E /* ChartDataCell.swift */; };
+		1DFAC58B2802B3A20062E52E /* ChartDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFAC5892802B3A20062E52E /* ChartDataCell.xib */; };
 		FEA45564770036591AB8BA2D /* Pods_examenios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93918DB8D027148064F50B9D /* Pods_examenios.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,11 +49,26 @@
 		1D59A69728021CC100B0BF5F /* ZoomImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageViewController.swift; sourceTree = "<group>"; };
 		1D59A69828021CC100B0BF5F /* ZoomImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZoomImageViewController.xib; sourceTree = "<group>"; };
 		1D59A69C28021F5B00B0BF5F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1D59A69F2802212400B0BF5F /* QuestionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRouter.swift; sourceTree = "<group>"; };
+		1D59A6A22802213900B0BF5F /* QuestionContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentModel.swift; sourceTree = "<group>"; };
+		1D59A6A52802214C00B0BF5F /* QuestionContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentViewModel.swift; sourceTree = "<group>"; };
+		1D59A6A828023F1200B0BF5F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1D59A6AB2802414300B0BF5F /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
+		1D59A6AE28024D0D00B0BF5F /* GraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
+		1D59A6AF28024D0D00B0BF5F /* GraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphicsViewController.xib; sourceTree = "<group>"; };
 		1D88820C2801F6C700EA131E /* examenios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examenios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D88820F2801F6C700EA131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8882182801F6CA00EA131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D88821B2801F6CA00EA131E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D88821D2801F6CA00EA131E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataGroupCell.swift; sourceTree = "<group>"; };
+		1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartDataGroupCell.xib; sourceTree = "<group>"; };
+		1DFAC5752802587B0062E52E /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		1DFAC5762802587B0062E52E /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableView.swift; sourceTree = "<group>"; };
+		1DFAC5852802B26A0062E52E /* ChartDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataCollectionView.swift; sourceTree = "<group>"; };
+		1DFAC5882802B3A20062E52E /* ChartDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataCell.swift; sourceTree = "<group>"; };
+		1DFAC5892802B3A20062E52E /* ChartDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartDataCell.xib; sourceTree = "<group>"; };
 		93918DB8D027148064F50B9D /* Pods_examenios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_examenios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC42CB40B0B6E372EB1B855 /* Pods-examenios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenios.debug.xcconfig"; path = "Target Support Files/Pods-examenios/Pods-examenios.debug.xcconfig"; sourceTree = "<group>"; };
 		B826CCB6331E9536F43E7983 /* Pods-examenios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-examenios.release.xcconfig"; path = "Target Support Files/Pods-examenios/Pods-examenios.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,10 +89,11 @@
 		1D59A67F2801FF5900B0BF5F /* View+Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1D59A69628021CAC00B0BF5F /* ZoomImage */,
 				1D59A68D280208DB00B0BF5F /* Cells */,
 				1D59A6852802029000B0BF5F /* Components */,
+				1D59A6AD28024CFD00B0BF5F /* Graphics */,
 				1D59A6842802028700B0BF5F /* Menu */,
+				1D59A69628021CAC00B0BF5F /* ZoomImage */,
 			);
 			path = "View+Controllers";
 			sourceTree = "<group>";
@@ -79,9 +110,11 @@
 		1D59A6852802029000B0BF5F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1D59A6942802174D00B0BF5F /* AlertController.swift */,
+				1DFAC5852802B26A0062E52E /* ChartDataCollectionView.swift */,
 				1D59A68B280202EC00B0BF5F /* MenuTableView.swift */,
 				1D59A692280210D500B0BF5F /* MultimediaImagePickerController.swift */,
-				1D59A6942802174D00B0BF5F /* AlertController.swift */,
+				1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -89,8 +122,10 @@
 		1D59A68D280208DB00B0BF5F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1D59A68E2802090000B0BF5F /* TextFieldCell.swift */,
-				1D59A68F2802090000B0BF5F /* TextFieldCell.xib */,
+				1DFAC5872802B3820062E52E /* ChartData */,
+				1DE1099C2802B5A500EE9525 /* ChartDataGroup */,
+				1DFAC574280258500062E52E /* Question */,
+				1DFAC579280258B70062E52E /* TextField */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -107,17 +142,60 @@
 		1D59A69B28021F5000B0BF5F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				1D59A69E28021FE300B0BF5F /* Router */,
+				1D59A6AA2802412200B0BF5F /* Services */,
+				1D59A69E28021FE300B0BF5F /* Routers */,
 				1D59A69C28021F5B00B0BF5F /* APIManager.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		1D59A69E28021FE300B0BF5F /* Router */ = {
+		1D59A69E28021FE300B0BF5F /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				1D59A69F2802212400B0BF5F /* QuestionRouter.swift */,
 			);
-			path = Router;
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		1D59A6A12802212900B0BF5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A6A22802213900B0BF5F /* QuestionContentModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D59A6A42802213E00B0BF5F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A6A52802214C00B0BF5F /* QuestionContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1D59A6A728023EE200B0BF5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A6A828023F1200B0BF5F /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D59A6AA2802412200B0BF5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A6AB2802414300B0BF5F /* QuestionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1D59A6AD28024CFD00B0BF5F /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A6AE28024D0D00B0BF5F /* GraphicsViewController.swift */,
+				1D59A6AF28024D0D00B0BF5F /* GraphicsViewController.xib */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 		1D8882032801F6C700EA131E = {
@@ -141,6 +219,9 @@
 		1D88820E2801F6C700EA131E /* examenios */ = {
 			isa = PBXGroup;
 			children = (
+				1D59A6A728023EE200B0BF5F /* Extensions */,
+				1D59A6A42802213E00B0BF5F /* ViewModels */,
+				1D59A6A12802212900B0BF5F /* Models */,
 				1D59A69B28021F5000B0BF5F /* Domain */,
 				1D59A67F2801FF5900B0BF5F /* View+Controllers */,
 				1D88820F2801F6C700EA131E /* AppDelegate.swift */,
@@ -149,6 +230,42 @@
 				1D88821D2801F6CA00EA131E /* Info.plist */,
 			);
 			path = examenios;
+			sourceTree = "<group>";
+		};
+		1DE1099C2802B5A500EE9525 /* ChartDataGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */,
+				1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */,
+			);
+			path = ChartDataGroup;
+			sourceTree = "<group>";
+		};
+		1DFAC574280258500062E52E /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				1DFAC5752802587B0062E52E /* QuestionCell.swift */,
+				1DFAC5762802587B0062E52E /* QuestionCell.xib */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		1DFAC579280258B70062E52E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				1D59A68E2802090000B0BF5F /* TextFieldCell.swift */,
+				1D59A68F2802090000B0BF5F /* TextFieldCell.xib */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		1DFAC5872802B3820062E52E /* ChartData */ = {
+			isa = PBXGroup;
+			children = (
+				1DFAC5882802B3A20062E52E /* ChartDataCell.swift */,
+				1DFAC5892802B3A20062E52E /* ChartDataCell.xib */,
+			);
+			path = ChartData;
 			sourceTree = "<group>";
 		};
 		5E168A2CB6543DE7186067CB /* Pods */ = {
@@ -179,6 +296,7 @@
 				1D8882082801F6C700EA131E /* Sources */,
 				1D8882092801F6C700EA131E /* Frameworks */,
 				1D88820A2801F6C700EA131E /* Resources */,
+				ECDDD15007061138F7B4C05B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,8 +346,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */,
+				1DFAC5782802587B0062E52E /* QuestionCell.xib in Resources */,
+				1DE109A02802B5BB00EE9525 /* ChartDataGroupCell.xib in Resources */,
 				1D59A69A28021CC100B0BF5F /* ZoomImageViewController.xib in Resources */,
 				1D59A6832801FF7500B0BF5F /* MenuViewController.xib in Resources */,
+				1D59A6B128024D0D00B0BF5F /* GraphicsViewController.xib in Resources */,
+				1DFAC58B2802B3A20062E52E /* ChartDataCell.xib in Resources */,
 				1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */,
 				1D59A6912802090000B0BF5F /* TextFieldCell.xib in Resources */,
 			);
@@ -238,6 +360,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		ECDDD15007061138F7B4C05B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenios/Pods-examenios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-examenios/Pods-examenios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-examenios/Pods-examenios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EDB19A2C56297C484D0CB515 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,14 +406,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFAC58028025AF50062E52E /* QuestionsTableView.swift in Sources */,
+				1DE1099F2802B5BB00EE9525 /* ChartDataGroupCell.swift in Sources */,
+				1D59A6AC2802414300B0BF5F /* QuestionService.swift in Sources */,
+				1DFAC58A2802B3A20062E52E /* ChartDataCell.swift in Sources */,
+				1D59A6B028024D0D00B0BF5F /* GraphicsViewController.swift in Sources */,
 				1D59A69D28021F5B00B0BF5F /* APIManager.swift in Sources */,
 				1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */,
 				1D59A693280210D500B0BF5F /* MultimediaImagePickerController.swift in Sources */,
+				1DFAC5862802B26A0062E52E /* ChartDataCollectionView.swift in Sources */,
 				1D59A69928021CC100B0BF5F /* ZoomImageViewController.swift in Sources */,
 				1D59A68C280202EC00B0BF5F /* MenuTableView.swift in Sources */,
 				1D59A6822801FF7500B0BF5F /* MenuViewController.swift in Sources */,
+				1D59A6A02802212400B0BF5F /* QuestionRouter.swift in Sources */,
+				1DFAC5772802587B0062E52E /* QuestionCell.swift in Sources */,
+				1D59A6A928023F1200B0BF5F /* UIColor+Extensions.swift in Sources */,
 				1D59A6952802174D00B0BF5F /* AlertController.swift in Sources */,
 				1D59A6902802090000B0BF5F /* TextFieldCell.swift in Sources */,
+				1D59A6A32802213900B0BF5F /* QuestionContentModel.swift in Sources */,
+				1D59A6A62802214C00B0BF5F /* QuestionContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
