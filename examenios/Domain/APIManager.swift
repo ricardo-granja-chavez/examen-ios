@@ -11,7 +11,7 @@ class APIManager {
     
     public static var shared = APIManager()
     
-    public let baseURL: String = "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld"
+    public let baseURL: String = "https://us-central1-bibliotecadecontenido.cloudfunctions.net"
     
     public let headers: [String : String] = ["Content-Type": "application/json",
                                              "Accept": "application/json"]
