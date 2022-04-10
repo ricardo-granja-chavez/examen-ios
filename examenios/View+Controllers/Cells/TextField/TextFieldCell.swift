@@ -7,17 +7,28 @@
 
 import UIKit
 
+protocol TextFieldCellDelegate: AnyObject {
+    func getText(text: String)
+}
+
 class TextFieldCell: UITableViewCell {
 
     static let identifier = "TextFieldCell"
+    weak var delegate: TextFieldCellDelegate?
     
     @IBOutlet weak var inputTextField: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.selectionStyle = .none
+        
         inputTextField.delegate = self
     }
     
+    @IBAction func textEditing(_ sender: UITextField) {
+        guard let text = sender.text else { return }
+        self.delegate?.getText(text: text)
+    }
 }
 
 extension TextFieldCell: UITextFieldDelegate {
@@ -31,5 +42,10 @@ extension TextFieldCell: UITextFieldDelegate {
             return false
         }
         return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.endEditing(true)
+        return false
     }
 }

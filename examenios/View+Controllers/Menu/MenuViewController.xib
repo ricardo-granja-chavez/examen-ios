@@ -23,11 +23,34 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5w-QI-Sa5">
+                    <rect key="frame" x="15" y="802" width="384" height="45"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="KiP-nr-L4d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Agregar información">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendInformationAction:" destination="-1" eventType="touchUpInside" id="Uup-d6-grz"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Zij-IZ-2eh" secondAttribute="bottom" id="4Pb-Cp-OGf"/>
+                <constraint firstItem="n5w-QI-Sa5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="QgP-Pv-m0q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="n5w-QI-Sa5" secondAttribute="bottom" constant="15" id="V2p-N6-GUY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n5w-QI-Sa5" secondAttribute="trailing" constant="15" id="Y88-2O-vpI"/>
                 <constraint firstItem="Zij-IZ-2eh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dcy-1V-5QA"/>
                 <constraint firstItem="Zij-IZ-2eh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dvc-nD-ZSk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zij-IZ-2eh" secondAttribute="trailing" id="qtO-Tu-BLn"/>
@@ -38,6 +61,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

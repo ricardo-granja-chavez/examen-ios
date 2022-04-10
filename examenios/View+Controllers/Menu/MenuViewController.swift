@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class MenuViewController: UIViewController {
     
     @IBOutlet weak var menuTableView: MenuTableView!
     
+    private var nameText: String = ""
     private var selfieImage: UIImage!
     
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class MenuViewController: UIViewController {
         menuTableView.register(UINib(nibName: TextFieldCell.identifier, bundle: nil), forCellReuseIdentifier: TextFieldCell.identifier)
         menuTableView.dataSource = menuTableView
         menuTableView.delegate = menuTableView
+        menuTableView.tableFooterView = UIView()
         menuTableView.onPress = { (type) in
             switch type {
             case .selfie:
@@ -31,6 +34,10 @@ class MenuViewController: UIViewController {
                 break
             }
         }
+        menuTableView.getText = { (text) in
+            self.nameText = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        
     }
     
     @objc private func showMultimediaOptions() {
@@ -84,6 +91,30 @@ class MenuViewController: UIViewController {
                                          title: "Opciones",
                                          message: "Seleccione una opción",
                                          actions: actions)
+    }
+
+    private func sendInformation() {
+        SVProgressHUD.show()
+        UserService().createUser(name: self.nameText, selfie: self.selfieImage) { (result) in
+            SVProgressHUD.dismiss()
+            
+            switch result {
+            case .success(let content):
+                if content {
+                    AlertController.shared.show(controller: self, title: "Exito", message: "La información ha sido agregada exitosamente.")
+                }
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+    }
+    
+    @IBAction func sendInformationAction(_ sender: Any) {
+        if !self.nameText.isEmpty && self.selfieImage != nil {
+            self.sendInformation()
+        } else {
+            AlertController.shared.show(controller: self, title: "Aviso", message: "Se debe de agregar un nombre del usuario y una selfie.")
+        }
     }
     
 }

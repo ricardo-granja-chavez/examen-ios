@@ -15,6 +15,7 @@ class MenuTableView: UITableView {
     }
     
     var onPress: (MenuType) -> Void = { (_) in }
+    var getText: (String) -> Void = { (_) in }
 }
 
 extension MenuTableView: UITableViewDelegate {
@@ -41,6 +42,7 @@ extension MenuTableView: UITableViewDataSource {
         switch type {
         case .textField:
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldCell.identifier, for: indexPath) as! TextFieldCell
+            cell.delegate = self
             return cell
         case .selfie:
             let cell = UITableViewCell(style: .default, reuseIdentifier: "DefaultCell")
@@ -53,5 +55,11 @@ extension MenuTableView: UITableViewDataSource {
             cell.accessoryType = .disclosureIndicator
             return cell
         }
+    }
+}
+
+extension MenuTableView: TextFieldCellDelegate {
+    func getText(text: String) {
+        self.getText(text)
     }
 }

@@ -7,5 +7,8 @@ target 'examenios' do
 
   pod 'SVProgressHUD'
   pod 'Charts'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
   
 end

@@ -24,11 +24,13 @@
 		1D59A6AC2802414300B0BF5F /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6AB2802414300B0BF5F /* QuestionService.swift */; };
 		1D59A6B028024D0D00B0BF5F /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D59A6AE28024D0D00B0BF5F /* GraphicsViewController.swift */; };
 		1D59A6B128024D0D00B0BF5F /* GraphicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D59A6AF28024D0D00B0BF5F /* GraphicsViewController.xib */; };
+		1D5AEC0A2802CCBD00EBA556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AEC092802CCBD00EBA556 /* GoogleService-Info.plist */; };
 		1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88820F2801F6C700EA131E /* AppDelegate.swift */; };
 		1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8882182801F6CA00EA131E /* Assets.xcassets */; };
 		1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D88821A2801F6CA00EA131E /* LaunchScreen.storyboard */; };
 		1DE1099F2802B5BB00EE9525 /* ChartDataGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */; };
 		1DE109A02802B5BB00EE9525 /* ChartDataGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */; };
+		1DF9F2DB2802D11C00B65349 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9F2DA2802D11C00B65349 /* UserService.swift */; };
 		1DFAC5772802587B0062E52E /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC5752802587B0062E52E /* QuestionCell.swift */; };
 		1DFAC5782802587B0062E52E /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFAC5762802587B0062E52E /* QuestionCell.xib */; };
 		1DFAC58028025AF50062E52E /* QuestionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */; };
@@ -56,6 +58,7 @@
 		1D59A6AB2802414300B0BF5F /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		1D59A6AE28024D0D00B0BF5F /* GraphicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
 		1D59A6AF28024D0D00B0BF5F /* GraphicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphicsViewController.xib; sourceTree = "<group>"; };
+		1D5AEC092802CCBD00EBA556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1D88820C2801F6C700EA131E /* examenios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examenios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D88820F2801F6C700EA131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8882182801F6CA00EA131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		1D88821D2801F6CA00EA131E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataGroupCell.swift; sourceTree = "<group>"; };
 		1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartDataGroupCell.xib; sourceTree = "<group>"; };
+		1DF9F2DA2802D11C00B65349 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		1DFAC5752802587B0062E52E /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		1DFAC5762802587B0062E52E /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 		1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableView.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				1D59A6AB2802414300B0BF5F /* QuestionService.swift */,
+				1DF9F2DA2802D11C00B65349 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		1D88820E2801F6C700EA131E /* examenios */ = {
 			isa = PBXGroup;
 			children = (
+				1D5AEC092802CCBD00EBA556 /* GoogleService-Info.plist */,
 				1D59A6A728023EE200B0BF5F /* Extensions */,
 				1D59A6A42802213E00B0BF5F /* ViewModels */,
 				1D59A6A12802212900B0BF5F /* Models */,
@@ -354,6 +360,7 @@
 				1DFAC58B2802B3A20062E52E /* ChartDataCell.xib in Resources */,
 				1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */,
 				1D59A6912802090000B0BF5F /* TextFieldCell.xib in Resources */,
+				1D5AEC0A2802CCBD00EBA556 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +429,7 @@
 				1DFAC5772802587B0062E52E /* QuestionCell.swift in Sources */,
 				1D59A6A928023F1200B0BF5F /* UIColor+Extensions.swift in Sources */,
 				1D59A6952802174D00B0BF5F /* AlertController.swift in Sources */,
+				1DF9F2DB2802D11C00B65349 /* UserService.swift in Sources */,
 				1D59A6902802090000B0BF5F /* TextFieldCell.swift in Sources */,
 				1D59A6A32802213900B0BF5F /* QuestionContentModel.swift in Sources */,
 				1D59A6A62802214C00B0BF5F /* QuestionContentViewModel.swift in Sources */,
