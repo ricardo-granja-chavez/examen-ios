@@ -25,7 +25,8 @@ class MenuViewController: UIViewController {
             case .selfie:
                 self.showMultimediaOptions()
             case .graphics:
-                break
+                let vc = GraphicsViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
             default:
                 break
             }
@@ -36,10 +37,10 @@ class MenuViewController: UIViewController {
         let multimediaController = MultimediaImagePickerController()
         
         multimediaController.delegate = multimediaController
-        multimediaController.getEditedImage = { (image) in
+        multimediaController.getOriginalImage = { (image) in
             self.selfieImage = image
         }
-        multimediaController.allowsEditing = true
+        //multimediaController.allowsEditing = true
         multimediaController.mediaTypes = ["public.image"]
         
         var actions: [UIAlertAction] = []
@@ -56,6 +57,7 @@ class MenuViewController: UIViewController {
                                          handler: { (_) in
                 if UIImagePickerController.isSourceTypeAvailable(.camera) {
                     multimediaController.sourceType = .camera
+                    multimediaController.cameraDevice = .front
                     self.present(multimediaController, animated: true)
                 } else {
                     AlertController.shared.show(controller: self, title: "Aviso", message: "Actualmente no se puede acceder a la cámara.\nInténtelo más tarde.")
@@ -67,6 +69,7 @@ class MenuViewController: UIViewController {
                                          handler: { (_) in
                 if UIImagePickerController.isSourceTypeAvailable(.camera) {
                     multimediaController.sourceType = .camera
+                    multimediaController.cameraDevice = .front
                     self.present(multimediaController, animated: true)
                 } else {
                     AlertController.shared.show(controller: self, title: "Aviso", message: "Actualmente no se puede acceder a la cámara.\nInténtelo más tarde.")
