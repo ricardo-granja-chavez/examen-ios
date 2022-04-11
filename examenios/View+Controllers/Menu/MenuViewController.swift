@@ -46,6 +46,8 @@ class MenuViewController: UIViewController {
         if let appColor = Constants.shared.appColor {
             self.view.backgroundColor = UIColor(hexString: appColor)
         }
+        
+        getColor()
     }
     
     @objc private func showMultimediaOptions() {
@@ -128,11 +130,9 @@ class MenuViewController: UIViewController {
     private func observeColor() {
         ColorService().observeColor { [weak self] (result) in
             switch result {
-            case.success(_):
+            case.success(let color):
                 DispatchQueue.main.async {
-                    if let appColor = Constants.shared.appColor {
-                        self?.view.backgroundColor = UIColor(hexString: appColor)
-                    }
+                    self?.view.backgroundColor = color
                 }
             case .failure(let error):
                 debugPrint(error.localizedDescription)
@@ -141,4 +141,18 @@ class MenuViewController: UIViewController {
         }
     }
 
+    private func getColor() {
+        ColorService().getColor { [weak self] (result) in
+            switch result {
+            case.success(let color):
+                DispatchQueue.main.async {
+                    self?.view.backgroundColor = color
+                }
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+                AlertController.shared.show(controller: self!, title: "Error", message: "No se pudo intercambiar el color, por favor inténtalo más tarde")
+            }
+        }
+    }
+    
 }
