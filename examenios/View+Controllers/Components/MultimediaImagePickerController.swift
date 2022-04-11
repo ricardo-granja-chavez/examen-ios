@@ -11,16 +11,12 @@ import UIKit
 
 class MultimediaImagePickerController: UIImagePickerController {
     var getOriginalImage: (UIImage) -> Void = { (_) in }
-    var getEditedImage: (UIImage) -> Void = { (_) in }
 }
 
 extension MultimediaImagePickerController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
             getOriginalImage(image)
-        }
-        if let image = info[.editedImage] as? UIImage {
-            getEditedImage(image)
         }
         self.dismiss(animated: true, completion: nil)
     }
