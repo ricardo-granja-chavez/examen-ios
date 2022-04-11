@@ -39,7 +39,10 @@ class MenuViewController: UIViewController {
         }
         
         observeColor()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let appColor = Constants.shared.appColor {
             self.view.backgroundColor = UIColor(hexString: appColor)
         }
@@ -123,16 +126,17 @@ class MenuViewController: UIViewController {
     }
     
     private func observeColor() {
-        ColorService().observeColor { (result) in
+        ColorService().observeColor { [weak self] (result) in
             switch result {
             case.success(_):
                 DispatchQueue.main.async {
                     if let appColor = Constants.shared.appColor {
-                        self.view.backgroundColor = UIColor(hexString: appColor)
+                        self?.view.backgroundColor = UIColor(hexString: appColor)
                     }
                 }
             case .failure(let error):
                 debugPrint(error.localizedDescription)
+                AlertController.shared.show(controller: self!, title: "Error", message: "No se pudo intercambiar el color, por favor inténtalo más tarde")
             }
         }
     }

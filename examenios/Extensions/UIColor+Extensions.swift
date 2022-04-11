@@ -17,7 +17,7 @@ extension UIColor {
         }
         
         if ((cString.count) != 6) {
-            self.init()
+            self.init(red: 1, green: 1, blue: 1, alpha: 1)
             return
         }
         
