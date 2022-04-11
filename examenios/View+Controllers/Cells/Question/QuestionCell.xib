@@ -10,44 +10,63 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="357" id="KGk-i7-Jjw" customClass="QuestionCell" customModule="examenios" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="478" id="KGk-i7-Jjw" customClass="QuestionCell" customModule="examenios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="463"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Estaba limpia la sucursal?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cF-m4-etF">
-                        <rect key="frame" x="15" y="10" width="290" height="27"/>
+                        <rect key="frame" x="15" y="10" width="290" height="32"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-7u-6Yc" customClass="PieChartView" customModule="Charts">
-                        <rect key="frame" x="15" y="47" width="290" height="290"/>
+                        <rect key="frame" x="15" y="52" width="290" height="290"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="eg1-7u-6Yc" secondAttribute="height" multiplier="1:1" id="oes-Vq-IeH"/>
                         </constraints>
                     </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-CZ-78m" customClass="ChartDataCollectionView" customModule="examenios" customModuleProvider="target">
+                        <rect key="frame" x="15" y="357" width="290" height="91"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="91" id="3P0-pM-H5r"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hwe-xO-XGe">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="eg1-7u-6Yc" firstAttribute="top" secondItem="1cF-m4-etF" secondAttribute="bottom" constant="10" id="4IZ-Eu-JHS"/>
                     <constraint firstItem="1cF-m4-etF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DsG-SY-Pej"/>
                     <constraint firstAttribute="trailing" secondItem="eg1-7u-6Yc" secondAttribute="trailing" constant="15" id="FTw-ep-vWL"/>
+                    <constraint firstAttribute="trailing" secondItem="Adt-CZ-78m" secondAttribute="trailing" constant="15" id="Ihc-sr-wha"/>
+                    <constraint firstAttribute="bottom" secondItem="Adt-CZ-78m" secondAttribute="bottom" constant="15" id="LnX-4C-E73"/>
+                    <constraint firstItem="Adt-CZ-78m" firstAttribute="top" secondItem="eg1-7u-6Yc" secondAttribute="bottom" constant="15" id="Qrk-d5-PVw"/>
+                    <constraint firstItem="Adt-CZ-78m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Xu3-eR-JMx"/>
                     <constraint firstItem="1cF-m4-etF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ymc-S3-DL2"/>
                     <constraint firstAttribute="trailing" secondItem="1cF-m4-etF" secondAttribute="trailing" constant="15" id="fVF-XN-eBL"/>
                     <constraint firstItem="eg1-7u-6Yc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="i6h-8G-i1w"/>
-                    <constraint firstAttribute="bottom" secondItem="eg1-7u-6Yc" secondAttribute="bottom" constant="15" id="xAa-sY-gaf"/>
+                    <constraint firstItem="Adt-CZ-78m" firstAttribute="top" secondItem="eg1-7u-6Yc" secondAttribute="bottom" constant="15" id="lTq-jF-AbF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="chartDataCollectionView" destination="Adt-CZ-78m" id="h10-Fv-TVI"/>
+                <outlet property="chartDataLayout" destination="3P0-pM-H5r" id="wDX-bf-6XA"/>
                 <outlet property="pieView" destination="eg1-7u-6Yc" id="Zaf-L7-57y"/>
                 <outlet property="questionLabel" destination="1cF-m4-etF" id="4Xl-4n-CqC"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="-0.6696428571428571"/>
+            <point key="canvasLocation" x="137.68115942028987" y="39.84375"/>
         </tableViewCell>
     </objects>
     <resources>

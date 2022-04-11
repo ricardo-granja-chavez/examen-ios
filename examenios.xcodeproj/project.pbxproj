@@ -28,9 +28,9 @@
 		1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88820F2801F6C700EA131E /* AppDelegate.swift */; };
 		1D8882192801F6CA00EA131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8882182801F6CA00EA131E /* Assets.xcassets */; };
 		1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D88821A2801F6CA00EA131E /* LaunchScreen.storyboard */; };
-		1DE1099F2802B5BB00EE9525 /* ChartDataGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */; };
-		1DE109A02802B5BB00EE9525 /* ChartDataGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */; };
 		1DF9F2DB2802D11C00B65349 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9F2DA2802D11C00B65349 /* UserService.swift */; };
+		1DF9F2DD28033C9C00B65349 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9F2DC28033C9C00B65349 /* ColorService.swift */; };
+		1DF9F2DF280344A200B65349 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9F2DE280344A200B65349 /* Constants.swift */; };
 		1DFAC5772802587B0062E52E /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC5752802587B0062E52E /* QuestionCell.swift */; };
 		1DFAC5782802587B0062E52E /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFAC5762802587B0062E52E /* QuestionCell.xib */; };
 		1DFAC58028025AF50062E52E /* QuestionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */; };
@@ -64,9 +64,9 @@
 		1D8882182801F6CA00EA131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D88821B2801F6CA00EA131E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D88821D2801F6CA00EA131E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataGroupCell.swift; sourceTree = "<group>"; };
-		1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartDataGroupCell.xib; sourceTree = "<group>"; };
 		1DF9F2DA2802D11C00B65349 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		1DF9F2DC28033C9C00B65349 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		1DF9F2DE280344A200B65349 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1DFAC5752802587B0062E52E /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		1DFAC5762802587B0062E52E /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 		1DFAC57F28025AF50062E52E /* QuestionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableView.swift; sourceTree = "<group>"; };
@@ -127,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				1DFAC5872802B3820062E52E /* ChartData */,
-				1DE1099C2802B5A500EE9525 /* ChartDataGroup */,
 				1DFAC574280258500062E52E /* Question */,
 				1DFAC579280258B70062E52E /* TextField */,
 			);
@@ -190,6 +189,7 @@
 			children = (
 				1D59A6AB2802414300B0BF5F /* QuestionService.swift */,
 				1DF9F2DA2802D11C00B65349 /* UserService.swift */,
+				1DF9F2DC28033C9C00B65349 /* ColorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -234,17 +234,9 @@
 				1D8882182801F6CA00EA131E /* Assets.xcassets */,
 				1D88821A2801F6CA00EA131E /* LaunchScreen.storyboard */,
 				1D88821D2801F6CA00EA131E /* Info.plist */,
+				1DF9F2DE280344A200B65349 /* Constants.swift */,
 			);
 			path = examenios;
-			sourceTree = "<group>";
-		};
-		1DE1099C2802B5A500EE9525 /* ChartDataGroup */ = {
-			isa = PBXGroup;
-			children = (
-				1DE1099D2802B5BB00EE9525 /* ChartDataGroupCell.swift */,
-				1DE1099E2802B5BB00EE9525 /* ChartDataGroupCell.xib */,
-			);
-			path = ChartDataGroup;
 			sourceTree = "<group>";
 		};
 		1DFAC574280258500062E52E /* Question */ = {
@@ -353,7 +345,6 @@
 			files = (
 				1D88821C2801F6CA00EA131E /* LaunchScreen.storyboard in Resources */,
 				1DFAC5782802587B0062E52E /* QuestionCell.xib in Resources */,
-				1DE109A02802B5BB00EE9525 /* ChartDataGroupCell.xib in Resources */,
 				1D59A69A28021CC100B0BF5F /* ZoomImageViewController.xib in Resources */,
 				1D59A6832801FF7500B0BF5F /* MenuViewController.xib in Resources */,
 				1D59A6B128024D0D00B0BF5F /* GraphicsViewController.xib in Resources */,
@@ -414,11 +405,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DFAC58028025AF50062E52E /* QuestionsTableView.swift in Sources */,
-				1DE1099F2802B5BB00EE9525 /* ChartDataGroupCell.swift in Sources */,
+				1DF9F2DF280344A200B65349 /* Constants.swift in Sources */,
 				1D59A6AC2802414300B0BF5F /* QuestionService.swift in Sources */,
 				1DFAC58A2802B3A20062E52E /* ChartDataCell.swift in Sources */,
 				1D59A6B028024D0D00B0BF5F /* GraphicsViewController.swift in Sources */,
 				1D59A69D28021F5B00B0BF5F /* APIManager.swift in Sources */,
+				1DF9F2DD28033C9C00B65349 /* ColorService.swift in Sources */,
 				1D8882102801F6C700EA131E /* AppDelegate.swift in Sources */,
 				1D59A693280210D500B0BF5F /* MultimediaImagePickerController.swift in Sources */,
 				1DFAC5862802B26A0062E52E /* ChartDataCollectionView.swift in Sources */,
@@ -581,6 +573,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,6 +604,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

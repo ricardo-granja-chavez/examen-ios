@@ -18,11 +18,14 @@ class GraphicsViewController: UIViewController {
         super.viewDidLoad()
         
         questionsTableView.register(UINib(nibName: QuestionCell.identifier, bundle: nil), forCellReuseIdentifier: QuestionCell.identifier)
-        questionsTableView.register(UINib(nibName: ChartDataGroupCell.identifier, bundle: nil), forCellReuseIdentifier: ChartDataGroupCell.identifier)
         questionsTableView.dataSource = questionsTableView
         questionsTableView.separatorStyle = .none
         
         getQuestions()
+        
+        if let appColor = Constants.shared.appColor {
+            self.view.backgroundColor = UIColor(hexString: appColor)
+        }
     }
 
     func getQuestions() {

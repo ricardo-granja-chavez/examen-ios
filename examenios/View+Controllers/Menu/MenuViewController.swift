@@ -38,6 +38,11 @@ class MenuViewController: UIViewController {
             self.nameText = text.trimmingCharacters(in: .whitespacesAndNewlines)
         }
         
+        observeColor()
+        
+        if let appColor = Constants.shared.appColor {
+            self.view.backgroundColor = UIColor(hexString: appColor)
+        }
     }
     
     @objc private func showMultimediaOptions() {
@@ -117,4 +122,19 @@ class MenuViewController: UIViewController {
         }
     }
     
+    private func observeColor() {
+        ColorService().observeColor { (result) in
+            switch result {
+            case.success(_):
+                DispatchQueue.main.async {
+                    if let appColor = Constants.shared.appColor {
+                        self.view.backgroundColor = UIColor(hexString: appColor)
+                    }
+                }
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+    }
+
 }

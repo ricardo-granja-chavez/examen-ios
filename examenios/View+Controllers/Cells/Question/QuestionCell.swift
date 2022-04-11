@@ -15,6 +15,9 @@ class QuestionCell: UITableViewCell {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var pieView: PieChartView!
     
+    @IBOutlet weak var chartDataCollectionView: ChartDataCollectionView!
+    @IBOutlet weak var chartDataLayout: NSLayoutConstraint!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
@@ -46,6 +49,14 @@ class QuestionCell: UITableViewCell {
         dataSet.drawValuesEnabled = false
         
         pieView.data = PieChartData(dataSet: dataSet)
+        
+        chartDataCollectionView.register(UINib(nibName: ChartDataCell.identifier, bundle: nil), forCellWithReuseIdentifier: ChartDataCell.identifier)
+        chartDataCollectionView.delegate = chartDataCollectionView
+        chartDataCollectionView.dataSource = chartDataCollectionView
+        chartDataCollectionView.colors = colors
+        chartDataCollectionView.collection = question.chartData
+        
+        chartDataLayout.constant = 50 * ceil(Double(question.chartData.count) / 2.0)
     }
     
 }

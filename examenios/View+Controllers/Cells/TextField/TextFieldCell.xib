@@ -38,6 +38,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="Jff-nE-8Pa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Go0-gD-yYq"/>
                     <constraint firstItem="Jff-nE-8Pa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="N5h-rY-Kkk"/>
@@ -46,6 +47,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="inputTextField" destination="312-85-gic" id="j5L-jD-evd"/>
             </connections>

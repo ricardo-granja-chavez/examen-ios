@@ -46,11 +46,13 @@ extension MenuTableView: UITableViewDataSource {
             return cell
         case .selfie:
             let cell = UITableViewCell(style: .default, reuseIdentifier: "DefaultCell")
+            cell.backgroundColor = .clear
             cell.textLabel?.text = "Selfie"
             cell.accessoryType = .disclosureIndicator
             return cell
         case .graphics:
             let cell = UITableViewCell(style: .default, reuseIdentifier: "DefaultCell")
+            cell.backgroundColor = .clear
             cell.textLabel?.text = "Gráficas"
             cell.accessoryType = .disclosureIndicator
             return cell
