@@ -16,7 +16,7 @@ hacia una vista anterior.
 viewDidDisappear, este es el último paso del ciclo de vida, Éste estados ejecutor cuando la viste ella desapareció totalmente 
 y se está en una vista diferente.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 7.- Explique el ciclo de vida de una aplicación.
 Not running, el estado del programa no se ha iniciado.
@@ -33,7 +33,7 @@ así por un periodo de tiempo y luego pasara al estado suspendido.
 Suspended, se refiere a que la aplicación también está en un segundo plano, pero a diferencia de background esta no puede ejecutar 
 ninguna operación.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 8.- En que casos se usa un weak, un strong y un unowned.
 Weak se usa cuando no protege a la instancia de la liberación de la memoria, por ejemplo en un closure, solamente se va a obtener un 
@@ -45,13 +45,13 @@ una variable directamente, esa variable es Strong.
 Unowned es muy parecido a Weak, solamente que a diferencia de Weak este puede será nulo en algún punto de su implementación, y se usa 
 cuando de la misma manera se quiere obtener un dato momentáneo como el de alguna respuesta de un closure.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 9.- ¿Qué es el ARC?
 Automatic Reference Counting, es el manejado de la memoria que Swift nos proporciona, trabaja automáticamente para liberar la memoria 
 usada por las instancias de clases cuando ya no son necesarias. Todo esto lo detecta cuando realmente ya no se va a utilizar alguna instancia.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Punto Extra
 El color que tendrá es rojo(UIColor.red), ya que con el ciclo de vida de la aplicación primero estará activa la app, 
