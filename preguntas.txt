@@ -1,48 +1,55 @@
 6.- Explique el ciclo de vida de un view controller. 
-viewDidLoad, este estado se ejecuta cuando se crea el view controller y se cargan todos sus componentes iniciales. Este solo se ejecuta al inicio y solo una vez.
+viewDidLoad, este estado se ejecuta cuando se crea el view controller y se cargan todos sus componentes iniciales. 
+Este solo se ejecuta al inicio y solo una vez.
 
-viewWillAppear, este estado se ejecuta antes de qué aparezca la vista, puede ser bueno para ocultar o mostrar campos específicos según la aplicación, cabe recalcar
-que si se está yendo y viniendo siempre se ejecutará este estado.
+viewWillAppear, este estado se ejecuta antes de qué aparezca la vista, puede ser bueno para ocultar o mostrar campos 
+específicos según la aplicación, cabe recalcar que si se está yendo y viniendo siempre se ejecutará este estado.
 
-viewDidAppear, este estado se ejecuta cuando ya apareció toda la vista, Regularmente este estado se ocupa para iniciar una animación o cargar datos que vienen de una API,
-en pocas palabras ejecuciones que pueden tomar tiempo asi que se ejecutan despues de la carga de la vista.
+viewDidAppear, este estado se ejecuta cuando ya apareció toda la vista, Regularmente este estado se ocupa para iniciar 
+una animación o cargar datos que vienen de una API, en pocas palabras ejecuciones que pueden tomar tiempo asi que se 
+ejecutan despues de la carga de la vista.
 
-ViewWillDisappear, este estado se ejecuta cuando la vista va a desaparecer, este estado regularmente puede servir para detener procesos como un temporizador o una petición 
-que no alcanzó a regresar algún valor, O en dado caso regresar valores hacia una vista anterior.
+ViewWillDisappear, este estado se ejecuta cuando la vista va a desaparecer, este estado regularmente puede servir para 
+detener procesos como un temporizador o una petición que no alcanzó a regresar algún valor, O en dado caso regresar valores 
+hacia una vista anterior.
 
-viewDidDisappear, este es el último paso del ciclo de vida, Éste estados ejecutor cuando la viste ella desapareció totalmente y se está en una vista diferente.
+viewDidDisappear, este es el último paso del ciclo de vida, Éste estados ejecutor cuando la viste ella desapareció totalmente 
+y se está en una vista diferente.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7.- Explique el ciclo de vida de una aplicación.
 Not running, el estado del programa no se ha iniciado.
 
-Inactive, se refiere que se está ejecutando actualmente en primer plano, pero no ha recibido ninguna operación por ejecutar. Solo está existiendo.
+Inactive, se refiere que se está ejecutando actualmente en primer plano, pero no ha recibido ninguna operación por ejecutar, 
+solo está existiendo.
 
-Active, se refiere que la aplicación igual en primer plano, ha recibido un evento por ejecutar, por lo que ahora si está haciendo una acción.
+Active, se refiere que la aplicación igual en primer plano, ha recibido un evento por ejecutar, por lo que ahora si está haciendo 
+una acción.
 
-Backgroud, se refiere que la aplicación se está ejecutando en un segundo plano y se está ejecutando una operación, este permanecerá así por un periodo 
-de tiempo y luego pasara al estado suspendido.
+Backgroud, se refiere que la aplicación se está ejecutando en un segundo plano y se está ejecutando una operación, este permanecerá 
+así por un periodo de tiempo y luego pasara al estado suspendido.
 
-Suspended, se refiere a que la aplicación también está en un segundo plano, pero a diferencia de background esta no puede ejecutar ninguna operación.
+Suspended, se refiere a que la aplicación también está en un segundo plano, pero a diferencia de background esta no puede ejecutar 
+ninguna operación.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8.- En que casos se usa un weak, un strong y un unowned.
-Weak se usa cuando no protege a la instancia de la liberación de la memoria, por ejemplo en un closure, solamente se va a obtener un dato momentáneamente
-en un ViewController que cuando se termine de mostrar no habría problema en que ARC libere esa memoria.
+Weak se usa cuando no protege a la instancia de la liberación de la memoria, por ejemplo en un closure, solamente se va a obtener un 
+dato momentáneamente en un ViewController que cuando se termine de mostrar no habría problema en que ARC libere esa memoria.
 
-Strong se usa casi siempre, ya que se refiere a cuando se hace la  declaración de una instancia lineal, cuándo se declara un objeto en una variable 
-directamente, esa variable es Strong.
+Strong se usa casi siempre, ya que se refiere a cuando se hace la  declaración de una instancia lineal, cuándo se declara un objeto en 
+una variable directamente, esa variable es Strong.
 
-Unowned es muy parecido a Weak, solamente que a diferencia de Weak este puede será nulo en algún punto de su implementación, y se usa cuando de la misma
-manera se quiere obtener un dato momentáneo como el de alguna respuesta de un closure.
+Unowned es muy parecido a Weak, solamente que a diferencia de Weak este puede será nulo en algún punto de su implementación, y se usa 
+cuando de la misma manera se quiere obtener un dato momentáneo como el de alguna respuesta de un closure.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 9.- ¿Qué es el ARC?
-Automatic Reference Counting, es el manejado de la memoria que Swift nos proporciona, trabaja automáticamente para liberar la memoria usada por las 
-instancias de clases cuando ya no son necesarias. Todo esto lo detecta cuando realmente ya no se va a utilizar alguna instancia.
+Automatic Reference Counting, es el manejado de la memoria que Swift nos proporciona, trabaja automáticamente para liberar la memoria 
+usada por las instancias de clases cuando ya no son necesarias. Todo esto lo detecta cuando realmente ya no se va a utilizar alguna instancia.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -50,4 +57,5 @@ Punto Extra
 El color que tendrá es rojo(UIColor.red), ya que con el ciclo de vida de la aplicación primero estará activa la app, 
 por lo tanto, requiere las configuraciones que en AppDelegate se implementan y hasta ese momento está en color amarillo(UIColor.yellow), 
 si no que ahora comienza el ciclo de vida del ViewController y la primera etapa del ciclo es la carga de los componentes 
-que en cierto punto puede fungir como main para darle inicio al ViewController y en ese momento es cuando cambia de color dejándolo en rojo(UIColor.red).
+que en cierto punto puede fungir como main para darle inicio al ViewController y en ese momento es cuando cambia de color dejándolo en 
+rojo(UIColor.red).
